@@ -1,0 +1,15 @@
+/home/matthew/csharp-practice/TestProject/bin/Debug/net10.0/TestProject
+/home/matthew/csharp-practice/TestProject/bin/Debug/net10.0/TestProject.deps.json
+/home/matthew/csharp-practice/TestProject/bin/Debug/net10.0/TestProject.runtimeconfig.json
+/home/matthew/csharp-practice/TestProject/bin/Debug/net10.0/TestProject.dll
+/home/matthew/csharp-practice/TestProject/bin/Debug/net10.0/TestProject.pdb
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.AssemblyInfoInputs.cache
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.AssemblyInfo.cs
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.csproj.CoreCompileInputs.cache
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.sourcelink.json
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.dll
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/refint/TestProject.dll
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.pdb
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/TestProject.genruntimeconfig.cache
+/home/matthew/csharp-practice/TestProject/obj/Debug/net10.0/ref/TestProject.dll
