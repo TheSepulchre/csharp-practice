@@ -3,3 +3,30 @@ int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
 
 // Your code goes here
+
+if (daysUntilExpiration == 0)
+{
+    subMessage = "Your subscription has expired.";
+}
+else if (daysUntilExpiration == 1)
+{
+    discountPercentage = 20;
+    subMessage = $"Your subscription expires within a day!\nRenew now and save {discountPercentage}%!";
+}
+else if (daysUntilExpiration <= 5)
+{
+    discountPercentage = 10;
+    subMessage = $"Your subscription expires in {daysUntilExpiration} days.\nRenew now and save {discountPercentage}%!";
+}
+else if (daysUntilExpiration <= 10)
+{
+    discountPercentage = 0;
+    subMessage = $"Your subscription will expire soon.! Renew now!";
+}
+else
+{
+    discountPercentage = 0;
+    subMessage = "";
+}
+
+Console.WriteLine(subMessage);
