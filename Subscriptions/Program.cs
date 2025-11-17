@@ -1,6 +1,7 @@
 ﻿Random random = new Random();
 int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
+string subMessage;
 
 // Your code goes here
 
