@@ -110,3 +110,29 @@ if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
         total += 2;
     }
 }
+
+
+// CHALLENGE EXERCISE
+
+/* The following code takes a string, reverses it, counts the number of times
+the letter 'o' appears in the string, then prints out the reversed string and the count.
+Reformat the code to improve its readability. */
+
+string str = "The quick brown fox jumps over the lazy dog.";
+
+char[] message = str.ToCharArray();
+Array.Reverse(message);
+
+int letterCount = 0;
+
+foreach (char letter in message) 
+{
+    if (letter == 'o') 
+    {   
+        letterCount++; 
+    } 
+}
+
+string newMessage = new String(message);
+Console.WriteLine(newMessage);
+Console.WriteLine($"'o' appears {letterCount} times.");
