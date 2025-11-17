@@ -40,7 +40,8 @@ foreach (string currentStudent in studentNames)
 
     int currentStudentSum = 0;
     decimal currentStudentGrade = 0;
-    decimal currentStudentExtraCredit = 0;
+    int currentStudentExtraCredit = 0;
+    decimal extraCreditDelta = 0;
     decimal currentStudentExamScore = 0;
     int gradedAssignments = 0;
 
@@ -48,12 +49,21 @@ foreach (string currentStudent in studentNames)
     {
         gradedAssignments+= 1;
         if (gradedAssignments > examAssignments)
+        {
             currentStudentSum += score / 10; // extra credit
+            currentStudentExtraCredit += (int)score;
+        }
         else
+        {
             currentStudentSum += score;
+            currentStudentExamScore += (decimal)score;
+        }
     }
 
     currentStudentGrade = (decimal)(currentStudentSum) / examAssignments;
+    currentStudentExamScore /= examAssignments;
+    currentStudentExtraCredit /= (gradedAssignments - examAssignments);
+    extraCreditDelta = currentStudentGrade - currentStudentExamScore;
 
     if (currentStudentGrade >= 97)
         currentStudentLetterGrade = "A+";
@@ -82,7 +92,7 @@ foreach (string currentStudent in studentNames)
     else
         currentStudentLetterGrade = "F";
 
-    Console.WriteLine($"{currentStudent}:\t\t{currentStudentExamScore}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCredit}");
+    Console.WriteLine($"{currentStudent}:\t\t{currentStudentExamScore}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}\t{currentStudentExtraCredit} ({extraCreditDelta} pts)");
 }
 
 Console.WriteLine("Press the Enter key to continue");
